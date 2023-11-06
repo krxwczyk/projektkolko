@@ -149,9 +149,9 @@ body
     text-align: center;
 }
 
-.form form span,li {
+/* .form form span,li {
     font-size: 0px;
-}
+} */
 
 .navbar {
     display: flex;
@@ -286,4 +286,24 @@ body
 .participants hr{
     border:1px solid rgb(70, 70, 97);
     box-shadow: 0 0 10px rgba(59, 59, 170, 0.5);
+}
+.delete {
+    color: white;
+}
+
+.delete a {
+    color: white;
+}
+
+.delete input[type=submit] {
+    border: none;
+    text-decoration: none;
+    border-radius: 6px;
+    background-color: rgb(146, 160, 190);
+    padding:10px;
+    color:white;
+}
+
+.delete form {
+    text-align: center;
 }
