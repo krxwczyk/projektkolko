@@ -31,6 +31,7 @@
                 {% endif %}
                 <span>@{{room.host.username}}</span>
                 <h5><a href="/room/{{room.id}}">{{room.name}}</a></h5>
+                <hr>
                 <div class="room_topic"><small>{{room.topic}}</small></div>
             </div>
     
@@ -38,19 +39,18 @@
         </div>
     </div>
 
-    <div>
+    <div class="activity">
         <h3>Recent Activity</h3>
-        <hr>
         {% for message in room_messages %}
-            <div>
-                <small>{{message.user}} {{message.created|timesince}}</small>
+            <div class="message">
+                <small><div class="user">{{message.user}}</div> {{message.created|timesince}}</small>
                 <small>replied to "{{message.room}}"</small>
 
                 <p>{{message}}</p>
                 {% if request.user == message.user %}
                 <a href="{% url 'delete-message' message.id %}">Delete</a>
                 {% endif %}
-                <hr>
+                
             </div>
         {% endfor %}
     </div>
