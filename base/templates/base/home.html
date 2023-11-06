@@ -17,10 +17,11 @@
         {% endfor %}
     </div>
 
-    <div>
-        <h5>{{room_count}} rooms available</h5>
-        <a href="{% url 'create-room' %}">Create Room</a>
-
+    <div class="available">
+        <div class="create">
+        <h3>{{room_count}} rooms available</h3>
+        <div class="btn"><a href="{% url 'create-room' %}">Create Room</a></div>
+        </div>
         <div class="rooms">
             {% for room in rooms %}
     
@@ -43,8 +44,8 @@
         <h3>Recent Activity</h3>
         {% for message in room_messages %}
             <div class="message">
-                <small><div class="user">{{message.user}}</div> {{message.created|timesince}}</small>
-                <small>replied to "{{message.room}}"</small>
+                <small><div class="user">{{message.user}}</div><div class="time"> {{message.created|timesince}}</div></small>
+                <small class="reply">replied to "{{message.room}}"</small>
 
                 <p>{{message}}</p>
                 {% if request.user == message.user %}
