@@ -37,3 +37,46 @@ body
     color: white;
     font-size: 35px;
 }
+
+.form {
+    display: flex;
+    flex-direction:column;
+    height:auto;
+    width:550px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(71, 71, 71);
+    border-radius: 5%;
+    margin:auto;
+    box-shadow: 5px;
+}
+
+.form label {
+    color:white;
+    font-size: 25px;
+}
+
+.form input[type=submit] {
+    border: none;
+    text-decoration: none;
+    border-radius: 6px;
+    background-color: rgb(126, 126, 126);
+    padding:10px;
+    color:white;
+}
+
+.form p {
+    color:white;
+}
+
+.form a {
+    color:white;
+}
+
+.form li {
+    color:white;
+}
+
+.form form {
+    text-align: center;
+}

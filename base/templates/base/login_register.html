@@ -2,15 +2,19 @@
 
 {% block content %}
 
-
 {% if page == 'login' %}
-<div>
+<div class="form">
     <form action="" method="post">
         {% csrf_token %}
+        <div>
         <label>Username</label>
         <input type="text" name="username" placeholder="Enter username">
+        </div>
+        <div>
         <label>Password</label>
         <input type="password" name="password" placeholder="Enter password">
+        </div>
+
 
         <input type="submit" value="Login">
     </form>
@@ -20,7 +24,7 @@
 
 {% else %}
 
-<div>
+<div class="form">
     <form action="" method="post">
         {% csrf_token %}
         {{form.as_p}}
