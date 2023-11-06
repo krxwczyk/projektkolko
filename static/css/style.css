@@ -176,12 +176,12 @@ body
 }
 
 ::placeholder {
-    color: rgb(61, 61, 77);
+    color: rgb(216, 216, 216);
     opacity: 1; /* Firefox */
   }
   
   ::-ms-input-placeholder { /* Edge 12 -18 */
-    color: rgb(61, 61, 77);
+    color: rgb(223, 223, 223);
   }
   .topics{
     margin-top: 30px;
@@ -306,4 +306,42 @@ body
 
 .delete form {
     text-align: center;
+}
+form label{
+    color:white;
+}
+#id_host,#id_topic,#id_name,select{
+    border: none;
+    outline: none;
+    background-color: rgb(85, 85, 104);
+    border-radius: 10px;
+    height: 30px;
+    width: 150px;
+    font-size: 20px;
+    color: white;
+}
+textarea{
+    background-color: rgb(85, 85, 104);    
+    border-radius: 10px; 
+}
+.xd{
+    width: 160px;
+    font-size: 24px;
+    height: 50px;
+    background-color: rgb(30, 172, 207);
+    border-radius: 13px;
+    line-height: 40px;
+    text-align: center;
+    margin-bottom: 7px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+form .write_mes{
+    background-color:rgb(85, 85, 104); 
+    color: white;
+    border: none;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
 }
