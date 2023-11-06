@@ -151,9 +151,9 @@ body
     text-align: center;
 }
 
-.form form span,li {
+/* .form form span,li {
     font-size: 0px;
-}
+} */
 
 .navbar {
     display: flex;
@@ -185,3 +185,24 @@ body
   ::-ms-input-placeholder { /* Edge 12 -18 */
     color: rgb(61, 61, 77);
   }
+
+.delete {
+    color: white;
+}
+
+.delete a {
+    color: white;
+}
+
+.delete input[type=submit] {
+    border: none;
+    text-decoration: none;
+    border-radius: 6px;
+    background-color: rgb(146, 160, 190);
+    padding:10px;
+    color:white;
+}
+
+.delete form {
+    text-align: center;
+}
