@@ -19,16 +19,17 @@ body
     text-decoration: none;
     color:rgb(255, 255, 255);
     font-size: 38px;
+    font-weight: 600;
 }
 .topic_name a:hover{
     text-decoration: underline;
 }
 .room{
-    border: 3px solid white;
+    border: none;
     margin-top: 10px;
     border-radius: 15px;
     padding: 10px ;
-    margin-right: 5px;
+    margin-right: 10px;
     background-color: rgb(63, 63, 77);
 }
 .room a{
@@ -66,4 +67,37 @@ body
 }
 .topic_name {
    margin-top: 40px;
+}
+.room hr{
+    border:1px solid rgb(70, 70, 97);
+    box-shadow: 0 0 10px rgba(59, 59, 170, 0.5)
+}
+.message{
+    border: none;
+    margin:5px;
+    border-radius: 10px;
+    background-color: rgb(63, 63, 77);
+}
+.activity{
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+.message small{
+    margin: 5px;
+}
+.message .user{
+    color: rgb(25, 166, 248);;
+    margin-left: 10px;
+    text-shadow: 2px 2px 15px rgb(25, 166, 248);
+    font-size: 17px;
+}
+.activity h3{
+    border-radius: 10px;
+    height: 60px;
+    text-align: center;
+    line-height: 65px;
+    font-size: 30px;
+    margin-top: 0px;
+    background-color: rgb(69, 69, 100);
 }
