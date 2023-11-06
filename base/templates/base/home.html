@@ -31,7 +31,7 @@
                 {% endif %}
                 <span>@{{room.host.username}}</span>
                 <h5><a href="/room/{{room.id}}">{{room.name}}</a></h5>
-                <small>{{room.topic}}</small>
+                <div class="room_topic"><small>{{room.topic}}</small></div>
             </div>
     
             {% endfor %}
