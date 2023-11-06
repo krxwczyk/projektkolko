@@ -69,6 +69,9 @@ body
 .topic_name {
    margin-top: 30px;
 }
+
+.room-container 
+
 .room hr{
     border:1px solid rgb(70, 70, 97);
     box-shadow: 0 0 10px rgba(59, 59, 170, 0.5)
@@ -141,8 +144,18 @@ body
     color:white;
 }
 
-.form li {
+.form ul li {
     color:white;
+    font-size: 0px;
+}
+
+.form .errorlist li {
+    color:white;
+    font-size: 16x;
+}
+
+.form span {
+    font-size: 0px;
 }
 
 .form form {
@@ -307,6 +320,7 @@ body
 .delete form {
     text-align: center;
 }
+<<<<<<< HEAD
 form label{
     color:white;
 }
@@ -345,3 +359,30 @@ form .write_mes{
     height: 40px;
     border-radius: 10px;
 }
+=======
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgb(44, 44, 56);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(63, 63, 77);
+    border-radius: 30px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(103, 103, 126);
+  }
+
+  .login-redirect p {
+    color:white;
+  }
+>>>>>>> e6e91caca732922f947412687778edd035b2257b
