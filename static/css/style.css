@@ -112,6 +112,10 @@ body
     text-align: center;
 }
 
+.form form span,li {
+    font-size: 0px;
+}
+
 .navbar {
     display: flex;
     gap: 450px;
