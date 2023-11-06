@@ -1,16 +1,20 @@
+{% load static %}
+
+<div class="navbar">
 <a href="/">
-    <h1>LOGO</h1>
+    <img src="{% static 'img/logo.png' %}" alt="" height=30px>
 </a>
 
 <form method="GET">
     <input type="text" name="q" placeholder="Search rooms...">
 </form>
 
+<div class="login-redirect">
 {% if request.user.is_authenticated %}
 <p>Hello {{request.user}}</p>
 <a href="{% url 'logout' %}">Logout</a>
 {% else %}
 <a href="{% url 'login' %}">Login</a>
 {% endif %}
-
-<hr>
+</div>
+</div>

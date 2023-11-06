@@ -2,6 +2,7 @@ body
 {
     background-color: rgb(44, 44, 56);
     font-family: arial;
+    margin: 20px;
 }
 
 .home-container 
@@ -29,15 +30,20 @@ body
     margin-top: 10px;
     border-radius: 15px;
     padding: 10px ;
+<<<<<<< HEAD
     margin-right: 10px;
     background-color: rgb(63, 63, 77);
+=======
+    margin-right: 5px;
+    background-color: rgb(61, 61, 77);
+>>>>>>> 45d2d7659d6555e204f8bf8bd3ec7c8398b9f9a4
 }
 .room a{
     text-decoration: none;
     color: white;
     font-size: 35px;
-    margin: 10px;
 }
+
 .room a:hover{
     text-decoration: underline;
 }
@@ -101,3 +107,77 @@ body
     margin-top: 0px;
     background-color: rgb(69, 69, 100);
 }
+
+.form {
+    display: flex;
+    flex-direction:column;
+    height:auto;
+    width:550px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(61, 61, 77);
+    border-radius: 5%;
+    margin:auto;
+    box-shadow: 5px;
+}
+
+.form label {
+    color:white;
+    font-size: 25px;
+}
+
+.form input[type=submit] {
+    border: none;
+    text-decoration: none;
+    border-radius: 6px;
+    background-color: rgb(146, 160, 190);
+    padding:10px;
+    color:white;
+}
+
+.form p {
+    color:white;
+}
+
+.form a {
+    color:white;
+}
+
+.form li {
+    color:white;
+}
+
+.form form {
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    gap: 450px;
+}
+
+.navbar .login-redirect a {
+    border: none;
+    text-decoration: none;
+    border-radius: 6px;
+    background-color: rgb(146, 160, 190);
+    padding:10px;
+    color:rgb(61, 61, 77);
+}
+
+.navbar input[type=text] {
+    border-radius: 6px;
+    background-color: rgb(146, 160, 190);
+    color: white;
+    height:30px;
+    width:400px;
+}
+
+::placeholder {
+    color: rgb(61, 61, 77);
+    opacity: 1; /* Firefox */
+  }
+  
+  ::-ms-input-placeholder { /* Edge 12 -18 */
+    color: rgb(61, 61, 77);
+  }
